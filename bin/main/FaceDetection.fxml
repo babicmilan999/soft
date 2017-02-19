@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.CheckBox?>
+	
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="main.Controller">
+	<center>
+		<VBox alignment="CENTER">
+			<padding>
+				<Insets right="10" left="10" />
+			</padding>
+			<ImageView fx:id="imageFrame" />
+		</VBox>
+	</center>
+	<bottom>
+		<HBox alignment="CENTER">
+			<padding>
+				<Insets top="25" right="25" bottom="25" left="25" />
+			</padding>
+			<Button fx:id="camButtonGender" alignment="center" text="Start predicting gender" onAction="#startGenderPrediction"/>
+			<Button fx:id="camButtonStart" alignment="center" text="Start camera" onAction="#startCamera"/>
+			<Button fx:id="camButtonAge" alignment="center" text="Start predicting age" onAction="#startAgePrediction"/>
+		</HBox>
+	</bottom>
+</BorderPane>
